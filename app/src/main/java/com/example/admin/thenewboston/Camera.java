@@ -43,6 +43,7 @@ public class Camera extends Activity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.bSetWall:
                 try {
+                    //Just a Test
                     getApplicationContext().setWallpaper(bmap);
                 } catch (IOException e) {
                     e.printStackTrace();
