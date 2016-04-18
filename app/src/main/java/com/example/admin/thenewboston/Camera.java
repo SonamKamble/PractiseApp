@@ -3,6 +3,7 @@ package com.example.admin.thenewboston;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by ADMIN on 13/04/2016.
@@ -28,6 +30,8 @@ public class Camera extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo);
         initialize();
+        //InputStream is=getResources().openRawResource(R.mipmap.ic_launcher);
+        //bmap= BitmapFactory.decodeStream(is);
     }
 
     private void initialize() {

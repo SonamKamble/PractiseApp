@@ -12,11 +12,11 @@
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">>
             <intent-filter>
                 <action android:name="com.example.admin.thenewboston.MAINACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -28,11 +28,30 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".Prefs">
+            <intent-filter>
+                <action android:name="com.example.admin.thenewboston.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutUs"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.example.admin.thenewboston.ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".TextPlay">
+        </activity>
+        <activity android:name=".GFX">
         </activity>
         <activity android:name=".Email">
         </activity>
         <activity android:name=".Camera">
+        </activity>
+        <activity android:name=".Data">
+        </activity>
+        <activity android:name=".OpenedClass">
         </activity>
     </application>
 
